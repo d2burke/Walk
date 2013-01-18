@@ -82,7 +82,7 @@
     [self.view addSubview:_map];
     
     _endWalkBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _endWalkBtn.frame = CGRectMake(self.view.frame.size.width - 150.f, self.view.frame.size.height - 118.f, 130.f, 44.f);
+    _endWalkBtn.frame = CGRectMake(self.view.frame.size.width - 150.f, 360.f, 130.f, 44.f);
     
     [_endWalkBtn setTitle:@"END WALK" forState:UIControlStateNormal];
     [_endWalkBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -94,7 +94,7 @@
     [_endWalkBtn setHidden:YES];
     
     _startWalkBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _startWalkBtn.frame = CGRectMake(20.f, self.view.frame.size.height - 118.f, 130.f, 44.f);
+    _startWalkBtn.frame = CGRectMake(20.f, 360.f, 130.f, 44.f);
     
     [_startWalkBtn setTitle:@"START A WALK" forState:UIControlStateNormal];
     [_startWalkBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -105,7 +105,7 @@
     [self.view addSubview:_startWalkBtn];
     
     _resetBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    _resetBtn.frame = CGRectMake(20.f, self.view.frame.size.height - 118.f, 130.f, 44.f);
+    _resetBtn.frame = CGRectMake(20.f, 360.f, 130.f, 44.f);
     
     [_resetBtn setTitle:@"RESTART" forState:UIControlStateNormal];
     [_resetBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
