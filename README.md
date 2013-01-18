@@ -1,6 +1,6 @@
 # Walk
 
-This is a demonstration of tracking a user's location and plotting their path on a map in iOS.
+This is a very simple demonstration of tracking a user's location and plotting their path on a map in iOS.  This project does not use any .nib files or Storyboards and is written in all-native Objective-C code.
 
 ![Start A Walk](http://d2burke.com/github_images/walk-1.png "Start A Walk")
 ![Walking](http://d2burke.com/github_images/walk-2.png "Walking")
