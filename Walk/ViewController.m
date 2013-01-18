@@ -291,7 +291,7 @@
     
     MKPolylineView *polylineView = [[MKPolylineView alloc] initWithPolyline:overlay];
     polylineView.strokeColor = [UIColor redColor];
-    polylineView.lineWidth = 5.0;
+    polylineView.lineWidth = 10.0;
     
     return polylineView;
 }
