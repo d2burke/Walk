@@ -302,6 +302,8 @@
 
 -(void)startWalk{
     
+    _isWalking = YES;
+    
     [_map removeOverlays:_map.overlays];
     
     UIImage *logoImage = [UIImage imageNamed:@"walking_logo"];
