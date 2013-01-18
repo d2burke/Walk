@@ -31,6 +31,7 @@
 @property (strong, nonatomic) NSString *totalTime;
 @property (strong, nonatomic) UILabel *totalTimeLabel;
 @property (strong, nonatomic) NSDate *startTime;
+@property (nonatomic) BOOL isWalking;
 
 @property (nonatomic) double maxLat;
 @property (nonatomic) double minLat;

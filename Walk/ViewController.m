@@ -27,6 +27,7 @@
     [super viewDidLoad];
     
     self.title = nil;
+    _isWalking = NO;
     _maxLat = _maxLong = _minLat = _minLong = 0;
     
     //CUSTOM NAV BAR
@@ -189,7 +190,7 @@
 //
 - (void)switchToBackgroundMode:(BOOL)background
 {
-    if (background)
+    if (_isWalking)
     {
         NSLog(@"Switch to background");
         self.locationManager.delegate = self;
@@ -243,6 +244,8 @@
                             [NSString stringWithFormat:@"%2f", _minLong], @"MinLong",
                             _points, @"Points",
                             nil];
+    _isWalking = NO;
+    
     [self.navigationController pushViewController:myWalk animated:YES];
     
 }
@@ -320,7 +323,7 @@
 }
 
 -(void)resetWalk{
-    
+    _isWalking = NO;
     [_map removeOverlays:_map.overlays];
     
     UIImage *logoImage = [UIImage imageNamed:@"nav_logo"];
